@@ -18,7 +18,13 @@
 2. Run ▶ на подключённом телефоне или эмуляторе (либо Build → Build APK(s)).
 3. На телефоне нажмите «Домой» и выберите Metro Launcher. Или откройте настройки лаунчера и нажмите «сделать лаунчером по умолчанию».
 
-В проекте нет `gradle-wrapper.jar`. Android Studio сама скачает Gradle 8.9. Для сборки из командной строки сначала выполните `gradle wrapper`.
+Из командной строки (нужны JDK 17 и Android SDK, путь к SDK укажите в `local.properties` как `sdk.dir=...`):
+
+```
+./gradlew assembleDebug
+```
+
+Готовый APK появится в `app/build/outputs/apk/debug/app-debug.apk`.
 
 ## Подстройка анимаций
 
